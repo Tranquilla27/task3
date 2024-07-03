@@ -1,0 +1,8 @@
+import numpy as np
+
+first_vector = np.arange(0, 1.5, 0.1, dtype=float).reshape((5, 3))
+second_vector = np.arange(1, 7, 1, dtype=float).reshape((3, 2))
+
+print(f'Первый вектор в виде 5х3: \n {first_vector}')
+print(f'Второй вектор в виде 3х2: \n {second_vector}')
+print(f'Результат умножения этих векторов: \n{first_vector.dot(second_vector)}')
