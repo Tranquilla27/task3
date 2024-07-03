@@ -1,3 +1,5 @@
+#task1
+
 import numpy as np
 
 first_vector = np.arange(0, 1.5, 0.1, dtype=float).reshape((5, 3))
@@ -6,3 +8,22 @@ second_vector = np.arange(1, 7, 1, dtype=float).reshape((3, 2))
 print(f'Первый вектор в виде 5х3: \n {first_vector}')
 print(f'Второй вектор в виде 3х2: \n {second_vector}')
 print(f'Результат умножения этих векторов: \n{first_vector.dot(second_vector)}')
+
+#task2
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+def y(n):
+    return 1 / (10 + n ** 2)
+
+
+x_arr = np.arange(0, 40.1, 0.1, dtype=float)
+y_arr = np.array([y(x) for x in x_arr])
+
+plt.plot(x_arr, y_arr)
+plt.xlabel('Ось Х')
+plt.ylabel('Ось У')
+plt.title('y(x) = 1/(10 + x^2)')
+plt.show()
